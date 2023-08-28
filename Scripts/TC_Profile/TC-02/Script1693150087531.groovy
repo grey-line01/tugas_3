@@ -21,7 +21,15 @@ WebUI.callTestCase(findTestCase('TC_Profile/Reuseable_Test_Case/Launch_APK'), [:
 
 Mobile.tap(findTestObject('homepage/btn_profile'), 0)
 
-Mobile.tap(findTestObject('Profile/btn_Order History'), 0)
+Mobile.verifyElementExist(findTestObject('Profile/txt_Your Name'), 0)
 
-Mobile.pressBack()
+Mobile.verifyElementExist(findTestObject('Profile/btn_Order History'), 0)
+
+Mobile.verifyElementExist(findTestObject('Profile/btn_Rate Us'), 0)
+
+Mobile.verifyElementExist(findTestObject('Profile/btn_Share'), 0)
+
+Mobile.verifyElementExist(findTestObject('Profile/btn_ Privacy Policy'), 0)
+
+Mobile.tap(findTestObject('Profile/btn_Order History'), 0)
 
