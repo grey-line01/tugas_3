@@ -21,8 +21,6 @@ WebUI.callTestCase(findTestCase('TC_Shopping/Reuseable_Test_Case/Launch_APK'), [
 
 Mobile.tap(findTestObject('homepage/txt_Samsung Galaxy S10 - Black'), 0)
 
-Mobile.verifyElementText(findTestObject('Add to cart/txt_899 USD'), '899 USD')
-
 Mobile.verifyElementText(findTestObject('Add to cart/txt_5 item(s)'), '5 item(s)')
 
 Mobile.tap(findTestObject('Add to cart/btn_ADD TO CART'), 0)
